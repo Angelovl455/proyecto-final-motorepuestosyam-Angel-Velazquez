@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motorepuestos Yam - Sistema de Gestión de Inventario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <h1>MOTORREPUESTOS YAM — GESTIÓN DE INVENTARIO Y FACTURACIÓN</h1>
+  </header>
+
+  <main class="contenedor">
+    <!-- Formulario de Registro -->
+    <section class="panel-formulario">
+      <h2>Registro / Edición de Repuesto</h2>
+      <form id="form-repuesto" class="grid-formulario" novalidate>
+        <div class="campo">
+          <label for="codigo">Código:</label>
+          <input type="text" id="codigo" placeholder="Ej. MY-011" required>
+        </div>
+        <div class="campo campo-ancho">
+          <label for="nombre">Descripción Repuesto:</label>
+          <input type="text" id="nombre" placeholder="Ej. Kit Empacaduras Horse 150" required>
+        </div>
+        <div class="campo">
+          <label for="marca">Marca/Modelo:</label>
+          <input type="text" id="marca" placeholder="Ej. Keeway" required>
+        </div>
+        <div class="campo">
+          <label for="precio">Precio USD:</label>
+          <input type="number" id="precio" step="0.01" min="0.01" placeholder="15.50" required>
+        </div>
+        <div class="campo">
+          <label for="stock">Stock:</label>
+          <input type="number" id="stock" step="1" min="0" placeholder="10" required>
+        </div>
+      </form>
+    </section>
+
+    <!-- Mensajes de Alerta o Cotización -->
+    <div id="alerta-sistema" class="alerta oculto" role="alert"></div>
+
+    <!-- Barra de Botones y Buscador -->
+    <section class="barra-acciones">
+      <div class="grupo-botones">
+        <button type="submit" form="form-repuesto" class="btn btn-primario">Agregar Repuesto</button>
+        <button type="button" id="btn-simular-venta" class="btn btn-acento">Simular Venta (Con IVA 16%)</button>
+        <button type="button" id="btn-eliminar" class="btn btn-peligro">Eliminar Seleccionado</button>
+        <button type="button" id="btn-restaurar" class="btn btn-secundario">Restaurar Base JSON</button>
+      </div>
+      <div class="grupo-busqueda">
+        <label for="busqueda">Buscar:</label>
+        <input type="text" id="busqueda" placeholder="Código, repuesto o marca...">
+      </div>
+    </section>
+
+    <!-- Tabla de Inventario -->
+    <section class="contenedor-tabla">
+      <table id="tabla-inventario">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Descripción del Repuesto</th>
+            <th>Marca / Compatibilidad</th>
+            <th>Precio (USD)</th>
+            <th>Stock Disp.</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo-tabla">
+          <!-- Renderizado dinámico desde app.js -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Barra de Resumen Global -->
+  <footer class="barra-resumen" id="resumen-global">
+    Total Items: 0 | Unidades en Stock: 0 | Valorización Total: $0.00 USD
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

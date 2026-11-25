@@ -1,0 +1,72 @@
+[
+  {
+    "codigo": "MY-001",
+    "nombre": "Kit Arrastre Keeway Horse 150 (428H)",
+    "marca": "Keeway",
+    "precio_usd": 22.50,
+    "stock": 18
+  },
+  {
+    "codigo": "MY-002",
+    "nombre": "CDI Racing 6 Pines Bera SBR 150",
+    "marca": "Bera",
+    "precio_usd": 14.00,
+    "stock": 25
+  },
+  {
+    "codigo": "MY-003",
+    "nombre": "Estator 8 Bobinas Suzuki GN 125",
+    "marca": "Suzuki",
+    "precio_usd": 28.00,
+    "stock": 12
+  },
+  {
+    "codigo": "MY-004",
+    "nombre": "Guaya Acelerador Keeway RK 200",
+    "marca": "Keeway",
+    "precio_usd": 6.50,
+    "stock": 30
+  },
+  {
+    "codigo": "MY-005",
+    "nombre": "Kit Cilindro Toro Rex 250 Completo",
+    "marca": "Toro",
+    "precio_usd": 65.00,
+    "stock": 5
+  },
+  {
+    "codigo": "MY-006",
+    "nombre": "Pastillas Freno Delantero Bera Socialista",
+    "marca": "Bera",
+    "precio_usd": 5.00,
+    "stock": 40
+  },
+  {
+    "codigo": "MY-007",
+    "nombre": "Carburador PZ27 Haojin MD Tucán",
+    "marca": "Haojin",
+    "precio_usd": 24.00,
+    "stock": 9
+  },
+  {
+    "codigo": "MY-008",
+    "nombre": "Aceite Mineral 20W-50 4T 1L",
+    "marca": "Motul",
+    "precio_usd": 11.50,
+    "stock": 50
+  },
+  {
+    "codigo": "MY-009",
+    "nombre": "Bujía Iridium CR8EIX Suzuki EN 125",
+    "marca": "NGK",
+    "precio_usd": 12.00,
+    "stock": 22
+  },
+  {
+    "codigo": "MY-010",
+    "nombre": "Cadena Reforzada 520H 120 Eslabones",
+    "marca": "DID",
+    "precio_usd": 32.00,
+    "stock": 14
+  }
+]
